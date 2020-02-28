@@ -3,7 +3,7 @@
 
 _pkgname=bspwm
 pkgname=${_pkgname}-git
-pkgver=0.9.5.r23.g0869be9
+pkgver=99999.0.9.5.r23.gd32a221
 pkgrel=1
 pkgdesc='A tiling window manager based on binary space partitioning'
 arch=('i686' 'x86_64')
@@ -29,7 +29,7 @@ conflicts=("${_pkgname}")
 
 pkgver() {
   cd $pkgname
-  git describe --long --tags | sed -r 's,^[^0-9]*,,;s,([^-]*-g),r\1,;s,[-_],.,g'
+  echo "99999."$(git describe --long --tags | sed -r 's,^[^0-9]*,,;s,([^-]*-g),r\1,;s,[-_],.,g')
 }
 
 
