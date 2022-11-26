@@ -10,7 +10,7 @@ makedepends=(git)
 depends=(xcb-util xcb-util-wm xcb-util-keysyms)
 optdepends=('sxhkd: to define keyboard and pointer bindings'
             'xdo: for the example panel')
-source=("$pkgname::git://github.com/amosbird/${_pkgname}.git")
+source=("$pkgname::git+https://github.com/amosbird/${_pkgname}.git")
 md5sums=('SKIP')
 provides=("${_pkgname}=${pkgver%%.r*}-${pkgrel}")
 conflicts=("${_pkgname}")

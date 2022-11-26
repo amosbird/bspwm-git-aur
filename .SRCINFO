@@ -13,7 +13,7 @@ pkgbase = bspwm-git
 	optdepends = xdo: for the example panel
 	provides = bspwm=99999.0.9.10-1
 	conflicts = bspwm
-	source = bspwm-git::git://github.com/amosbird/bspwm.git
+	source = bspwm-git::git+https://github.com/amosbird/bspwm.git
 	md5sums = SKIP
 
 pkgname = bspwm-git
